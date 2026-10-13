@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+    body {
+        background-color: rgba(30, 29, 29, 0.261);
+    }
+        
+        .image {
+            position: relative;
+            width: min(80vw, 500px);
+            aspect-ratio: 1 / 1;
+        }
+
+        .image img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: opacity 0.4s ease;
+        }
+
+
+        .image .hover {
+            opacity: 0;
+        }
+
+        .image:hover .hover {
+            opacity: 1;
+        }
+
+        .image:hover .default {
+            opacity: 0;
+        }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="image">
+    <img src="reveal1.png class="default" alt="">
+    <img src="reveal2.png class="hover" alt="">
+</div>
+
+
+</body>
+</html>
